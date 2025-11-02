@@ -1,0 +1,28 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "الإمامة في الفكر الشيعي",
+      "titleEnglish": "Imamate in Shia Thought",
+      "description": "دراسة معمقة في مفهوم الإمامة وأدلتها العقلية والنقلية",
+      "cover": "assets/images/books/book1.jpg",
+      "pdf": "books/imamate.pdf",
+      "publishDate": "2024-01-15",
+      "pages": 350,
+      "language": "Arabic",
+      "category": "عقائد"
+    },
+    {
+      "id": 2,
+      "title": "مباحث في الفقه المعاصر",
+      "titleEnglish": "Contemporary Fiqh Studies",
+      "description": "تحليل للمسائل الفقهية المعاصرة وفق المنهج الشيعي",
+      "cover": "assets/images/books/book2.jpg",
+      "pdf": "books/contemporary-fiqh.pdf",
+      "publishDate": "2024-06-20",
+      "pages": 420,
+      "language": "Arabic",
+      "category": "فقه"
+    }
+  ]
+}

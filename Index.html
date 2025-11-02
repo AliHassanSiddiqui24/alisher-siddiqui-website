@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-site-verification"
+      content="Tu0lPPbHVsaPjxNaug02022bKfHEWe_bePxS9oudH7Y"
+    />
+    <meta
+      name="description"
+      content="Ali Sher Siddiqui - Shia Muslim scholar, researcher, and author. Access books, articles, research, and Islamic knowledge."
+    />
+    <meta
+      name="keywords"
+      content="Ali Sher Siddiqui, Shia Scholar, Islamic Research, Shia Books, Islamic Articles, علی شیر صدیقی"
+    />
+    <meta name="author" content="Ali Sher Siddiqui" />
+    <meta
+      property="og:title"
+      content="Ali Sher Siddiqui - Islamic Scholar & Researcher"
+    />
+    <meta
+      property="og:description"
+      content="Official website of Ali Sher Siddiqui featuring books, articles, and Islamic research"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/scholar-photo.jpg" />
+    <title>علی شیر صدیقی | Ali Sher Siddiqui - Islamic Scholar</title>
+    <link rel="canonical" href="https://yourdomain.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary-color: #2c5f2d;
+        --secondary-color: #1a3a1b;
+        --accent-color: #d4af37;
+        --text-dark: #333;
+        --text-light: #666;
+        --bg-light: #f8f9fa;
+        --white: #ffffff;
+        --shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        --shadow-hover: 0 5px 25px rgba(0, 0, 0, 0.15);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Noto Nastaliq Urdu", "Amiri", serif;
+        line-height: 1.8;
+        color: var(--text-dark);
+        background: var(--white);
+      }
+
+      /* Header & Navigation */
+      header {
+        background: linear-gradient(
+          135deg,
+          var(--primary-color) 0%,
+          var(--secondary-color) 100%
+        );
+        color: var(--white);
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: var(--shadow);
+      }
+
+      nav {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+      }
+
+      .logo {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--accent-color);
+      }
+
+      .nav-links {
+        display: flex;
+        list-style: none;
+        gap: 2rem;
+      }
+
+      .nav-links a {
+        color: var(--white);
+        text-decoration: none;
+        transition: color 0.3s;
+        font-weight: 500;
+      }
+
+      .nav-links a:hover {
+        color: var(--accent-color);
+      }
+
+      .menu-toggle {
+        display: none;
+        background: none;
+        border: none;
+        color: var(--white);
+        font-size: 1.5rem;
+        cursor: pointer;
+      }
+
+      /* Hero Section */
+      .hero {
+        background: linear-gradient(
+            rgba(44, 95, 45, 0.9),
+            rgba(26, 58, 27, 0.9)
+          ),
+          url("assets/images/hero-bg.jpg");
+        background-size: cover;
+        background-position: center;
+        color: var(--white);
+        padding: 6rem 2rem;
+        text-align: center;
+      }
+
+      .hero-content {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: var(--accent-color);
+      }
+
+      .hero p {
+        font-size: 1.3rem;
+        margin-bottom: 2rem;
+        opacity: 0.95;
+      }
+
+      .cta-button {
+        background: var(--accent-color);
+        color: var(--text-dark);
+        padding: 1rem 2.5rem;
+        border: none;
+        border-radius: 50px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .cta-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
+      }
+
+      /* Container */
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+      }
+
+      /* Section Styles */
+      .section {
+        margin-bottom: 4rem;
+      }
+
+      .section-title {
+        text-align: center;
+        font-size: 2.5rem;
+        color: var(--primary-color);
+        margin-bottom: 3rem;
+        position: relative;
+        padding-bottom: 1rem;
+      }
+
+      .section-title::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 3px;
+        background: var(--accent-color);
+      }
+
+      /* About Section */
+      .about-content {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        gap: 3rem;
+        align-items: start;
+      }
+
+      .scholar-photo {
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: var(--shadow);
+      }
+
+      .bio-text {
+        font-size: 1.1rem;
+        line-height: 2;
+        text-align: justify;
+      }
+
+      /* Books Grid */
+      .books-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 2rem;
+      }
+
+      .book-card {
+        background: var(--white);
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        transition: all 0.3s;
+        cursor: pointer;
+      }
+
+      .book-card:hover {
+        transform: translateY(-10px);
+        box-shadow: var(--shadow-hover);
+      }
+
+      .book-cover {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+      }
+
+      .book-info {
+        padding: 1.5rem;
+      }
+
+      .book-title {
+        font-size: 1.3rem;
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+      }
+
+      .book-description {
+        color: var(--text-light);
+        margin-bottom: 1rem;
+        font-size: 0.95rem;
+      }
+
+      .download-btn {
+        background: var(--primary-color);
+        color: var(--white);
+        padding: 0.7rem 1.5rem;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: all 0.3s;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .download-btn:hover {
+        background: var(--secondary-color);
+      }
+
+      /* Articles Section */
+      .articles-list {
+        display: grid;
+        gap: 2rem;
+      }
+
+      .article-card {
+        background: var(--white);
+        padding: 2rem;
+        border-radius: 15px;
+        box-shadow: var(--shadow);
+        transition: all 0.3s;
+        border-right: 4px solid var(--accent-color);
+      }
+
+      .article-card:hover {
+        box-shadow: var(--shadow-hover);
+        transform: translateX(-5px);
+      }
+
+      .article-title {
+        font-size: 1.5rem;
+        color: var(--primary-color);
+        margin-bottom: 0.5rem;
+      }
+
+      .article-meta {
+        color: var(--text-light);
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+      }
+
+      .article-excerpt {
+        color: var(--text-dark);
+        margin-bottom: 1rem;
+        line-height: 1.8;
+      }
+
+      .read-more {
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .read-more:hover {
+        color: var(--accent-color);
+      }
+
+      /* Q&A Section */
+      .qa-container {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .qa-item {
+        background: var(--white);
+        padding: 2rem;
+        margin-bottom: 1.5rem;
+        border-radius: 15px;
+        box-shadow: var(--shadow);
+        border-right: 4px solid var(--primary-color);
+      }
+
+      .question {
+        font-size: 1.3rem;
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+        font-weight: 600;
+      }
+
+      .answer {
+        color: var(--text-dark);
+        line-height: 2;
+      }
+
+      /* Social Media Feed */
+      .social-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .tweet-card {
+        background: var(--white);
+        padding: 1.5rem;
+        border-radius: 15px;
+        box-shadow: var(--shadow);
+        transition: all 0.3s;
+      }
+
+      .tweet-card:hover {
+        box-shadow: var(--shadow-hover);
+      }
+
+      .tweet-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+
+      .tweet-avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-left: 1rem;
+      }
+
+      .tweet-content {
+        color: var(--text-dark);
+        line-height: 1.6;
+      }
+
+      /* Gallery */
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .gallery-item {
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        transition: all 0.3s;
+        cursor: pointer;
+      }
+
+      .gallery-item:hover {
+        transform: scale(1.05);
+        box-shadow: var(--shadow-hover);
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+      }
+
+      /* Contact Section */
+      .contact-info {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        text-align: center;
+      }
+
+      .contact-card {
+        background: var(--bg-light);
+        padding: 2rem;
+        border-radius: 15px;
+      }
+
+      .contact-icon {
+        font-size: 2.5rem;
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+      }
+
+      /* Footer */
+      footer {
+        background: var(--secondary-color);
+        color: var(--white);
+        text-align: center;
+        padding: 2rem;
+        margin-top: 4rem;
+      }
+
+      /* Mobile Responsiveness */
+      @media (max-width: 768px) {
+        .nav-links {
+          position: fixed;
+          right: -100%;
+          top: 70px;
+          flex-direction: column;
+          background: var(--secondary-color);
+          width: 100%;
+          padding: 2rem;
+          transition: right 0.3s;
+        }
+
+        .nav-links.active {
+          right: 0;
+        }
+
+        .menu-toggle {
+          display: block;
+        }
+
+        .hero h1 {
+          font-size: 2rem;
+        }
+
+        .hero p {
+          font-size: 1.1rem;
+        }
+
+        .about-content {
+          grid-template-columns: 1fr;
+          text-align: center;
+        }
+
+        .books-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .section-title {
+          font-size: 2rem;
+        }
+      }
+
+      /* Loading Animation */
+      .loading {
+        text-align: center;
+        padding: 2rem;
+        color: var(--text-light);
+      }
+
+      /* Search Box */
+      .search-box {
+        max-width: 600px;
+        margin: 0 auto 3rem;
+        position: relative;
+      }
+
+      .search-box input {
+        width: 100%;
+        padding: 1rem 3rem 1rem 1.5rem;
+        border: 2px solid var(--primary-color);
+        border-radius: 50px;
+        font-size: 1rem;
+        font-family: inherit;
+      }
+
+      .search-box input:focus {
+        outline: none;
+        box-shadow: 0 0 10px rgba(44, 95, 45, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">علی شیر صدیقی</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">الصفحة الرئيسية</a></li>
+          <li><a href="#about">السيرة الذاتية</a></li>
+          <li><a href="#books">الکتب</a></li>
+          <li><a href="#articles">المقالات</a></li>
+          <li><a href="#qa">الأسئلة والأجوبة</a></li>
+          <li><a href="#contact">اتصل بنا</a></li>
+        </ul>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <h1>علی شیر صدیقی</h1>
+        <p>باحث إسلامي شيعي ومؤلف | نشر المعرفة الإسلامية الأصيلة</p>
+        <a href="#books" class="cta-button">استكشف الكتب</a>
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="section" id="about">
+        <h2 class="section-title">السيرة الذاتية</h2>
+        <div class="about-content">
+          <img
+            src="assets/images/scholar-photo.jpg"
+            alt="Ali Sher Siddiqui"
+            class="scholar-photo"
+            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22300%22 height=%22300%22%3E%3Crect fill=%22%232c5f2d%22 width=%22300%22 height=%22300%22/%3E%3Ctext fill=%22%23fff%22 font-size=%2230%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22%3EScholar Photo%3C/text%3E%3C/svg%3E'"
+          />
+          <div class="bio-text">
+            <p>
+              علی شیر صدیقی باحث إسلامي شيعي متخصص في الدراسات الإسلامية
+              المعاصرة. يكرس جهوده لنشر المعرفة الإسلامية الأصيلة من خلال البحث
+              والكتابة والتدريس.
+            </p>
+            <p>
+              صدرت له العديد من الكتب والمقالات البحثية التي تناقش قضايا إسلامية
+              معاصرة بمنهجية علمية دقيقة. يهدف عمله إلى تقديم فهم عميق للتراث
+              الإسلامي الشيعي وتطبيقاته في العصر الحديث.
+            </p>
+            <p>
+              يشارك بفاعلية في المنصات الرقمية لنشر المحتوى الديني والتواصل مع
+              الباحثين والقراء المهتمين بالدراسات الإسلامية.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="books">
+        <h2 class="section-title">الکتب المنشورة</h2>
+        <div class="search-box">
+          <input type="text" id="bookSearch" placeholder="ابحث عن كتاب..." />
+        </div>
+        <div class="books-grid" id="booksGrid">
+          <div class="loading">جاري تحميل الكتب...</div>
+        </div>
+      </section>
+
+      <section class="section" id="articles">
+        <h2 class="section-title">المقالات والأبحاث</h2>
+        <div class="articles-list" id="articlesList">
+          <div class="loading">جاري تحميل المقالات...</div>
+        </div>
+      </section>
+
+      <section class="section" id="qa">
+        <h2 class="section-title">الأسئلة والأجوبة</h2>
+        <div class="qa-container" id="qaContainer">
+          <div class="loading">جاري تحميل الأسئلة...</div>
+        </div>
+      </section>
+
+      <section class="section" id="social">
+        <h2 class="section-title">أحدث المنشورات</h2>
+        <div class="social-grid" id="socialGrid">
+          <div class="loading">جاري تحميل المنشورات...</div>
+        </div>
+      </section>
+
+      <section class="section" id="gallery">
+        <h2 class="section-title">معرض الصور</h2>
+        <div class="gallery-grid" id="galleryGrid">
+          <div class="loading">جاري تحميل الصور...</div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <h2 class="section-title">تواصل معنا</h2>
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-icon">📧</div>
+            <h3>البريد الإلكتروني</h3>
+            <p>scholar@example.com</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">📱</div>
+            <h3>تويتر</h3>
+            <p>@AliSherSiddiqui</p>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <h3>الموقع</h3>
+            <p>Multan, Punjab, Pakistan</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Ali Sher Siddiqui. جميع الحقوق محفوظة.</p>
+      <p>تم التطوير بهدف نشر العلم والمعرفة الإسلامية</p>
+    </footer>
+
+    <script>
+      // Mobile Menu Toggle
+      const menuToggle = document.getElementById("menuToggle");
+      const navLinks = document.getElementById("navLinks");
+
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+
+      // Close menu on link click
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("active");
+        });
+      });
+
+      // Sample Data - Replace with actual data from your content files
+      const booksData = [
+        {
+          id: 1,
+          title: "الإمامة في الفكر الشيعي",
+          description: "دراسة معمقة في مفهوم الإمامة وأدلتها العقلية والنقلية",
+          cover: "assets/images/books/book1.jpg",
+          pdf: "books/book1.pdf",
+        },
+        {
+          id: 2,
+          title: "مباحث في الفقه المعاصر",
+          description: "تحليل للمسائل الفقهية المعاصرة وفق المنهج الشيعي",
+          cover: "assets/images/books/book2.jpg",
+          pdf: "books/book2.pdf",
+        },
+        {
+          id: 3,
+          title: "التفسير الموضوعي للقرآن",
+          description: "منهج جديد في فهم القرآن الكريم",
+          cover: "assets/images/books/book3.jpg",
+          pdf: "books/book3.pdf",
+        },
+      ];
+
+      const articlesData = [
+        {
+          id: 1,
+          title: "الوحدة الإسلامية: الواقع والتحديات",
+          date: "2025-10-15",
+          excerpt:
+            "تناقش هذه المقالة أهمية الوحدة الإسلامية في مواجهة التحديات المعاصرة وسبل تحقيقها...",
+          link: "articles/unity.html",
+        },
+        {
+          id: 2,
+          title: "المرأة في الفكر الإسلامي الشيعي",
+          date: "2025-09-20",
+          excerpt:
+            "دراسة تحليلية لمكانة المرأة ودورها في المجتمع من منظور إسلامي شيعي أصيل...",
+          link: "articles/women.html",
+        },
+      ];
+
+      const qaData = [
+        {
+          question: "ما هي أهم الكتب التي تنصح بقراءتها للمبتدئين؟",
+          answer:
+            "أنصح المبتدئين بالبدء بكتب العقائد الأساسية مثل 'عقائد الإمامية' للشيخ المظفر، ثم الانتقال إلى كتب الفقه المبسطة. المهم هو فهم الأساسيات قبل الخوض في التفاصيل.",
+        },
+        {
+          question: "كيف يمكن التوفيق بين الدراسات الإسلامية والعلوم الحديثة؟",
+          answer:
+            "الإسلام لا يتعارض مع العلم الصحيح، بل يحث على طلبه. المنهج الصحيح هو فهم النصوص الدينية بعمق وعدم التسرع في الحكم بالتعارض قبل البحث الدقيق.",
+        },
+      ];
+
+      const socialData = [
+        {
+          content:
+            "السعي للعلم عبادة، ونشره صدقة جارية. لنجعل من منصاتنا الرقمية وسيلة لنشر المعرفة النافعة.",
+          date: "2025-10-28",
+        },
+        {
+          content:
+            "الاختلاف في الرأي لا يفسد للود قضية، طالما كان الهدف الوصول للحقيقة وليس الانتصار للذات.",
+          date: "2025-10-25",
+        },
+      ];
+
+      // Render Books
+      function renderBooks(books = booksData) {
+        const grid = document.getElementById("booksGrid");
+        if (books.length === 0) {
+          grid.innerHTML =
+            '<p style="text-align:center;">لا توجد كتب متاحة حالياً</p>';
+          return;
+        }
+
+        grid.innerHTML = books
+          .map(
+            (book) => `
+                <div class="book-card">
+                    <img src="${book.cover}" alt="${book.title}" class="book-cover" 
+                         onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22280%22 height=%22350%22%3E%3Crect fill=%22%232c5f2d%22 width=%22280%22 height=%22350%22/%3E%3Ctext fill=%22%23fff%22 font-size=%2220%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22%3EBook Cover%3C/text%3E%3C/svg%3E'">
+                    <div class="book-info">
+                        <h3 class="book-title">${book.title}</h3>
+                        <p class="book-description">${book.description}</p>
+                        <a href="${book.pdf}" class="download-btn" download>تحميل PDF</a>
+                    </div>
+                </div>
+            `
+          )
+          .join("");
+      }
+
+      // Render Articles
+      function renderArticles() {
+        const list = document.getElementById("articlesList");
+        list.innerHTML = articlesData
+          .map(
+            (article) => `
+                <div class="article-card">
+                    <h3 class="article-title">${article.title}</h3>
+                    <div class="article-meta">تاريخ النشر: ${article.date}</div>
+                    <p class="article-excerpt">${article.excerpt}</p>
+                    <a href="${article.link}" class="read-more">اقرأ المزيد ←</a>
+                </div>
+            `
+          )
+          .join("");
+      }
+
+      // Render Q&A
+      function renderQA() {
+        const container = document.getElementById("qaContainer");
+        container.innerHTML = qaData
+          .map(
+            (qa) => `
+                <div class="qa-item">
+                    <div class="question">س: ${qa.question}</div>
+                    <div class="answer">ج: ${qa.answer}</div>
+                </div>
+            `
+          )
+          .join("");
+      }
+
+      // Render Social Posts
+      function renderSocial() {
+        const grid = document.getElementById("socialGrid");
+        grid.innerHTML = socialData
+          .map(
+            (post) => `
+                <div class="tweet-card">
+                    <div class="tweet-content">${post.content}</div>
+                    <div class="article-meta" style="margin-top: 1rem;">${post.date}</div>
+                </div>
+            `
+          )
+          .join("");
+      }
+
+      // Render Gallery
+      function renderGallery() {
+        const grid = document.getElementById("galleryGrid");
+        const galleryImages = [
+          "assets/images/gallery/1.jpg",
+          "assets/images/gallery/2.jpg",
+          "assets/images/gallery/3.jpg",
+          "assets/images/gallery/4.jpg",
+        ];
+
+        grid.innerHTML = galleryImages
+          .map(
+            (img, index) => `
+                <div class="gallery-item">
+                    <img src="${img}" alt="Gallery Image ${index + 1}"
+                         onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22250%22 height=%22250%22%3E%3Crect fill=%22%232c5f2d%22 width=%22250%22 height=%22250%22/%3E%3Ctext fill=%22%23fff%22 font-size=%2220%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22%3EGallery Image%3C/text%3E%3C/svg%3E'">
+                </div>
+            `
+          )
+          .join("");
+      }
+
+      // Search Books
+      document.getElementById("bookSearch").addEventListener("input", (e) => {
+        const searchTerm = e.target.value.toLowerCase();
+        const filtered = booksData.filter(
+          (book) =>
+            book.title.toLowerCase().includes(searchTerm) ||
+            book.description.toLowerCase().includes(searchTerm)
+        );
+        renderBooks(filtered);
+      });
+
+      // Smooth Scrolling
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          }
+        });
+      });
+
+      // Initialize content
+      renderBooks();
+      renderArticles();
+      renderQA();
+      renderSocial();
+      renderGallery();
+
+      // Add scroll-based header shadow
+      window.addEventListener("scroll", () => {
+        const header = document.querySelector("header");
+        if (window.scrollY > 100) {
+          header.style.boxShadow = "0 5px 20px rgba(0,0,0,0.2)";
+        } else {
+          header.style.boxShadow = "var(--shadow)";
+        }
+      });
+    </script>
+  </body>
+</html>
